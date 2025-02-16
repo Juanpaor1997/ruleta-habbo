@@ -1,6 +1,6 @@
 body {
     text-align: center;
-    background-color: #0b3d02; /* Verde oscuro de casino */
+    background-color: #0b3d02; /* Verde oscuro tipo casino */
     color: white;
     font-family: Arial, sans-serif;
 }
@@ -19,21 +19,28 @@ body {
 .ruleta {
     width: 100%;
     height: 100%;
-    background: radial-gradient(circle, red 50%, black 50%);
+    background: radial-gradient(circle, black 50%, red 50%);
     border-radius: 50%;
     position: relative;
     transition: transform 4s ease-out;
 }
 
 .bola {
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     background: white;
     border-radius: 50%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    transition: transform 4s ease-out;
+}
+
+/* Estilos para mejorar la animación de la bola */
+@keyframes bolaMovimiento {
+    0% { transform: rotate(0deg) translate(90px) rotate(0deg); }
+    100% { transform: rotate(360deg) translate(90px) rotate(-360deg); }
 }
 
 button {
