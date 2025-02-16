@@ -36,11 +36,18 @@ function girarRuleta() {
     const bola = document.getElementById("bola");
     const resultado = document.getElementById("resultado");
 
+    if (!ruleta || !bola || !resultado) {
+        console.error("No se encontraron los elementos de la ruleta en el DOM.");
+        return;
+    }
+
+    // Girar la ruleta con un diseño más realista
     ruleta.style.transition = "transform 4s ease-out";
     ruleta.style.transform = `rotate(${angulo}deg)`;
     
+    // Simulación del movimiento realista de la bola en la ruleta
     bola.style.transition = "transform 4s ease-out";
-    bola.style.transform = `rotate(${angulo * -1}deg) translate(90px)`;
+    bola.style.transform = `rotate(${angulo * -1.2}deg) translate(95px)`;
     
     setTimeout(() => {
         let numeroGanador = ruletaNumeros[randomIndex];
