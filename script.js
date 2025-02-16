@@ -1,5 +1,3 @@
-// Ruleta de Casino - Código mejorado con números y colores reales y movimiento correcto de la bola
-
 document.addEventListener("DOMContentLoaded", () => {
     const ruleta = document.getElementById("ruleta");
     const bola = document.getElementById("bola");
@@ -38,16 +36,9 @@ function girarRuleta() {
     const bola = document.getElementById("bola");
     const resultado = document.getElementById("resultado");
 
-    if (!ruleta || !bola || !resultado) {
-        console.error("No se encontraron los elementos de la ruleta en el DOM.");
-        return;
-    }
-
-    // Girar la ruleta
     ruleta.style.transition = "transform 4s ease-out";
     ruleta.style.transform = `rotate(${angulo}deg)`;
     
-    // Simulación del giro de la bola en la ruleta
     bola.style.transition = "transform 4s ease-out";
     bola.style.transform = `rotate(${angulo * -1}deg) translate(90px)`;
     
