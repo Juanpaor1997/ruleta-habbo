@@ -55,12 +55,6 @@ body {
     transition: transform 4s ease-out;
 }
 
-/* Estilos para mejorar la animación de la bola */
-@keyframes bolaMovimiento {
-    0% { transform: rotate(0deg) translate(90px) rotate(0deg); }
-    100% { transform: rotate(360deg) translate(90px) rotate(-360deg); }
-}
-
 button {
     background-color: yellow;
     color: black;
