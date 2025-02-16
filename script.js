@@ -1,4 +1,4 @@
-// wix_roulette.js - Código completo para integrar la ruleta en GitHub Pages
+// Ruleta de Casino - Código mejorado con números y colores reales
 
 document.addEventListener("DOMContentLoaded", () => {
     const ruleta = document.getElementById("ruleta");
@@ -46,7 +46,7 @@ function girarRuleta() {
     ruleta.style.transition = "transform 4s ease-out";
     ruleta.style.transform = `rotate(${angulo}deg)`;
     bola.style.transition = "transform 3.5s ease-in-out";
-    bola.style.transform = `rotate(-${angulo}deg) translate(80px)`;
+    bola.style.transform = `rotate(-${angulo}deg) translate(100px)`;
     
     setTimeout(() => {
         let numeroGanador = ruletaNumeros[randomIndex];
