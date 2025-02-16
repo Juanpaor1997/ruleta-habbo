@@ -26,7 +26,8 @@ const ruletaNumeros = [
     { number: 20, color: "black" }, { number: 14, color: "red" }, { number: 31, color: "black" },
     { number: 9, color: "red" }, { number: 22, color: "black" }, { number: 18, color: "red" },
     { number: 29, color: "black" }, { number: 7, color: "red" }, { number: 28, color: "black" },
-    { number: 12, color: "red" }, { number: 35, color: "black" }, { number: 3, color: "red" }
+    { number: 12, color: "red" }, { number: 35, color: "black" }, { number: 3, color: "red" },
+    { number: 26, color: "black" }
 ];
 
 function girarRuleta() {
